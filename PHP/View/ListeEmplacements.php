@@ -22,12 +22,6 @@ echo '<body class="colonne">
             }
 
         echo '</div>
-
-        <div class="margin">
-            <div class="espace></div>
-            <div class="return"><a class="centre" href="index.php?page=formulaire">Retour</a></div>
-            <div class="espace"></div>
-        </div>
     </div>
 
 </body>
