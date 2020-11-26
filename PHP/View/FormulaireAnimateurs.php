@@ -1,45 +1,155 @@
+<?php
 
-    <?php
-
-
-    <form method="POST" action="index.php>?page=traitementConvention&typeTraitement=ajouter">
+$typeFormulaire= $_GET['typeFormulaire'];
+if($typeFormulaire=="ajouter")
+{
+    echo'<form method="POST" action="index.php>?page=traitementAnimateurs&typeTraitement=ajouter">
+    <div class="contenu colonne">
+        <div class="colonne">
+            <div class="titreColonne centre">
+                 Nom de l\'animateur
+            </div>
+        <input class="libelle" type="text" name="nomAnimateur" placeholder="Nom de l\'animateur"/>
+    </div>
+    <div class="colonne">
+        <div class="titreColonne centre">
+            Prénom de l\'animateur
+        </div>
+        <input class="libelle" type="text" name="PrenomAnimateur" placeholder="Prenom de l\'animateur"/>
+    </div>
+    <div class="colonne">
+        <div class="titreColonne centre">
+            Titre de l\'animateur
+        </div>
+        <input class="libelle" type="text" name="TitreAnimateur" placeholder="Titre de l\'animateur"/>
+    </div>
+            <div class="colonne">
+                <div class="titreColonne centre">
+                    Date de début
+                    </div>
+                <input class="libelle" type="date" name="DateDebut" placeholder="Date de début"/>
+            </div>
+            <div class="colonne">
+                <div class="titreColonne centre">
+                    Date de fin
+                    </div>
+                <input class="libelle" type="date" name="DateFin" placeholder="Date de fin"/>
+            </div>';
+            // foreach($listeAnim as $unAnim)
+            // {
+            //     echo'</div>
+            //     <select class="libelle" name="idEmplacement">
+            //         <option value="1">test salle 1</option>
+            //         <option value="3"> test salle 3</option>
+            //     </select>
+            // </div>';
+            // }
+    }
+else if($typeFormulaire=="modifier")
+    {
+        $idRecherche= $_GET['id'];
+        $id= EmplacementsManager::findById($idRecherche);
+        $listeEmplacement= EmplacementsManager::getList();
+        echo'<form method="POST" action="index.php>?page=traitementAnimateurs&typeTraitement=modifier">
         <div class="contenu colonne">
             <div class="colonne">
                 <div class="titreColonne centre">
-                    Nom de lanimateur
+                    Nom de l\'animateur
                 </div>
-                <input class="libelle" type="text" name="nomConvention" placeholder="Nom de la Convention"/>
+                <input class="libelle" type="text" name="nomAnimateur" placeholder="Nom de l\'animateur"/>
             </div>
             <div class="colonne">
                 <div class="titreColonne centre">
-                    Categorie Convention
+                    Prénom de l\'animateur
                 </div>
-                <input class="libelle" type="text" name="categorieConvention" placeholder="Categorie de la Convention"/>
+                <input class="libelle" type="text" name="PrenomAnimateur" placeholder="Prenom de l\'animateur"/>
             </div>
             <div class="colonne">
                 <div class="titreColonne centre">
-                    Id Salle
-                </div>
-                <select class="libelle" name="idSalle">
-                    <option value="1">test salle 1</option>
-                    <option value="3"> test salle 3</option>
-                </select>
+                    Titre de l\'animateur
+                    </div>
+                <input class="libelle" type="text" name="TitreAnimateur" placeholder="Titre de l\'animateur"/>
             </div>
-            <div class="return marginLight"><a class="centre" href="index.php">Retour</a></div>
+            <div class="colonne">
+                <div class="titreColonne centre">
+                    Date de début
+                    </div>
+                <input class="libelle" type="date" name="DateDebut" placeholder="Date de début"/>
+            </div>
+            <div class="colonne">
+                <div class="titreColonne centre">
+                    Date de fin
+                    </div>
+                <input class="libelle" type="date" name="DateFin" placeholder="Date de fin"/>
+            </div>';
+            echo'</div>
+            <select class="libelle" name="idEmplacement">';
+            foreach($listeEmplacement as $unEmplacement)
+            {
+                $sel="";
+                if($unEmplacement->getIdEmplacement()== $id)
+                {
+                    $sel= "selected";
+                }
+                echo'<option value="'.$unEmplacement->getIdEmplacement().'"'.$sel.'">';
+            }
+            echo'</select>
+            </div>';
+        }
+        else if($typeFormulaire=="details")
+            {
+                $idRecherche= $_GET['id'];
+                $id= EmplacementsManager::findById($idRecherche);
+                $listeEmplacement= EmplacementsManager::getList();
+                echo'<form method="POST" action="index.php>?page=traitementAnimateurs&typeTraitement=details">
+                <div class="contenu colonne">
+                    <div class="colonne">
+                        <div class="titreColonne centre">
+                            Nom de l\'animateur
+                        </div>
+                        <input class="libelle" type="text" name="nomAnimateur" placeholder="Nom de l\'animateur"/>
+                    </div>
+                    <div class="colonne">
+                        <div class="titreColonne centre">
+                            Prénom de l\'animateur
+                        </div>
+                        <input class="libelle" type="text" name="PrenomAnimateur" placeholder="Prenom de l\'animateur"/>
+                    </div>
+                    <div class="colonne">
+                        <div class="titreColonne centre">
+                            Titre de l\'animateur
+                            </div>
+                        <input class="libelle" type="text" name="TitreAnimateur" placeholder="Titre de l\'animateur"/>
+                    </div>
+                    <div class="colonne">
+                        <div class="titreColonne centre">
+                            Date de début
+                            </div>
+                        <input class="libelle" type="date" name="DateDebut" placeholder="Date de début"/>
+                    </div>
+                    <div class="colonne">
+                        <div class="titreColonne centre">
+                            Date de fin
+                            </div>
+                        <input class="libelle" type="date" name="DateFin" placeholder="Date de fin"/>
+                    </div>';
+                    echo'</div>
+                    <select class="libelle" name="idEmplacement">';
+                    foreach($listeEmplacement as $unEmplacement)
+                    {
+                        $sel="";
+                        if($unEmplacement->getIdEmplacement()== $id)
+                        {
+                            $sel= "selected";
+                        }
+                        echo'<option value="'.$unEmplacement->getIdEmplacement().'"'.$sel.'">';
+                    }
+                    echo'</select>
+                    </div>';
+            }
+
+
+           echo' <div class="return marginLight"><a class="centre" href="index.php?page=listeAnimateurs">Retour</a></div>
             <input type="submit" class="ajouter marginLight centre" name="submit" value="ajouter"/>
         </div>
-    </form>
-
-    <footer>
-        <div class="centre tailleFooter">Contact</div>
-        <div class="centre tailleFooter">Calendrier</div>
-        <div class="centre tailleFooter">FAQ</div>
-        <div class="centre tailleFooter">Reseaux</div>
-        <div class="image">
-            <img src="../IMG/logo.png" alt="image PGW">
-        </div>
-    </footer>
-
-</body>
-
-</html>
+    </form>';

@@ -7,7 +7,7 @@ $listeAnim= AnimateursManager::getList();
 echo'<div class="contenu colonne">
         <div class="margin">
             <div class="espace"></div>
-            <div class="ajouter"><a class="centre" href="index.php?page=formulaireAnimateurs">Ajouter Animateur</a></div>
+            <div class="ajouter"><a class="centre" href="index.php?page=formulaireAnimateurs&typeFormulaire=ajouter">Ajouter Animateur</a></div>
             <div class="espace"></div>
         </div>';
 
@@ -15,9 +15,9 @@ echo'<div class="liste">';
 foreach($listeAnim as $unAnim)
 {
     echo'<div class="libelle marginBouton">'.$unAnim->getNomAnimateur().' '.$unAnim->getPrenomAnimateur().'</div>
-            <div class="details marginBouton"><a href="index.php?page=formulaireAnimateurs&typeTraitement=details&id='.$unAnim->getIdAnimateur().'>Details</a></div>
-            <div class="modifier marginBouton"><a href="index.php?page=formulaireAnimateurs&typeTraitement=modifier&id='.$unAnim->getIdAnimateur().'>Modifier</a></div>
-            <div class="supprimer marginBouton"><a href="index.php?page=formulaireAnimateurs&typeTraitement=supprimer&id='.$unAnim->getIdAnimateur().'>Supprimer</div>';
+            <div class="details marginBouton"><a href="index.php?page=formulaireAnimateurs&typeFormulaire=details&id='.$unAnim->getIdAnimateur().'>Details</a></div>
+            <div class="modifier marginBouton"><a href="index.php?page=formulaireAnimateurs&typeFormulaire=modifier&id='.$unAnim->getIdAnimateur().'>Modifier</a></div>
+            <div class="supprimer marginBouton"><a href="index.php?page=formulaireAnimateurs&typeFormulaire=supprimer&id='.$unAnim->getIdAnimateur().'>Supprimer</div>';
 }
            
 echo'</div>
