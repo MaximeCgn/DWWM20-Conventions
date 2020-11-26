@@ -20,5 +20,7 @@ foreach ($salle as $uneSalle){
     ';
 }
 echo '</div>
+
+
 </div>
 ';
