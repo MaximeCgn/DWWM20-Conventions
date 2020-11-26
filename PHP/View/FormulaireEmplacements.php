@@ -30,7 +30,8 @@ else if ($typeFormulaire=="modifier")
                     <input type="text" class="libelle" name="nomVisiteur" value="'.$id->getNumeroEmplacement().'"/>
                     
                 </div>
-            </div>';    
+            </div>
+            </form>';   
 }
 else if ($typeFormulaire=="details")
 {
@@ -43,5 +44,17 @@ else if ($typeFormulaire=="details")
                     <input type="text" class="libelle" name="numeroEmplacement" value="'.$id->getNumeroEmplacement().'"disabled/>
                 </div>
             </div>
-        </div>';
+        </div>
+        <div>
+        <div class="espace"></div>
+        <div class="return marginLight"><a class="centre" href="index.php?page=listeVisiteurs">Retour</a></div>
+        <div class="espace"></div>
+    </div>
+    <div>
+    <div class="espace"></div>
+        <input type="submit" class="ajouter marginLight centre" name="submit" value="Ajouter"/>
+        <div class="espace"></div>
+        </div>
+    </div>
+</form>';
 }
