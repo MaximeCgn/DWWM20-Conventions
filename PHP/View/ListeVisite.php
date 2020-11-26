@@ -20,11 +20,7 @@ echo '<body class="colonne">
             </div>';
         }
  
-        echo '<div class="margin">
-            <div class="espace"></div>
-            <div class="return"><a class="centre" href="index.php?page=formulaireVisite">Retour</a></div>
-            <div class="espace"></div>
-        </div>
+        echo '
     </div>
 
 </body>
