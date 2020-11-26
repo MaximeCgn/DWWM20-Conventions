@@ -16,7 +16,7 @@ if ($typeFormulaire=="ajouter")
                 </div>
     </form>';
 }
-else if ($typeFormulaire=="modifer")
+else if ($typeFormulaire=="modifier")
 {
     $idRecherche=$_GET['id'];
     $id=EmplacementsManager::findById($idRecherche);
