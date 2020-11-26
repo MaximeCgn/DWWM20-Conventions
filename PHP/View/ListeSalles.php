@@ -4,7 +4,7 @@ echo '<div></div>';
 echo '<div class="contenu colonne">
 <div class="margin">
     <div class="espace"></div>
-    <div class="ajouter"><a class="centre" href="index.php?page=formulaireSalles">Ajouter Convention</a></div>
+    <div class="ajouter"><a class="centre" href="index.php?page=formulaireSalles&typeFormulaire=ajouter">Ajouter Convention</a></div>
     <div class="espace"></div>
 </div>';
 
