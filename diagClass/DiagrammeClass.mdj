@@ -3035,13 +3035,30 @@
 											"height": 13,
 											"text": "+getList()",
 											"horizontalAlignment": 0
+										},
+										{
+											"_type": "UMLOperationView",
+											"_id": "AAAAAAF2A7UOK4XAZUU=",
+											"_parent": {
+												"$ref": "AAAAAAF2ADK+c7khzK8="
+											},
+											"model": {
+												"$ref": "AAAAAAF2A7UOIIW96tc="
+											},
+											"font": "Arial;13;0",
+											"left": 933,
+											"top": 619,
+											"width": 160.4052734375,
+											"height": 13,
+											"text": "+getByEmplacement()",
+											"horizontalAlignment": 0
 										}
 									],
 									"font": "Arial;13;0",
 									"left": 928,
 									"top": 539,
 									"width": 170.4052734375,
-									"height": 83
+									"height": 98
 								},
 								{
 									"_type": "UMLReceptionCompartmentView",
@@ -3081,7 +3098,7 @@
 							"left": 928,
 							"top": 504,
 							"width": 170.4052734375,
-							"height": 118,
+							"height": 133,
 							"nameCompartment": {
 								"$ref": "AAAAAAF2ADK+c7kb4TQ="
 							},
@@ -3298,13 +3315,30 @@
 											"height": 13,
 											"text": "+getList()",
 											"horizontalAlignment": 0
+										},
+										{
+											"_type": "UMLOperationView",
+											"_id": "AAAAAAF2A7TKTIW5OWQ=",
+											"_parent": {
+												"$ref": "AAAAAAF2ADOGU7lwtpg="
+											},
+											"model": {
+												"$ref": "AAAAAAF2A7TKMYW2R4U="
+											},
+											"font": "Arial;13;0",
+											"left": 1141,
+											"top": 619,
+											"width": 180.64794921875,
+											"height": 13,
+											"text": "+getByConvention()",
+											"horizontalAlignment": 0
 										}
 									],
 									"font": "Arial;13;0",
 									"left": 1136,
 									"top": 539,
 									"width": 190.64794921875,
-									"height": 83
+									"height": 98
 								},
 								{
 									"_type": "UMLReceptionCompartmentView",
@@ -3344,7 +3378,7 @@
 							"left": 1136,
 							"top": 504,
 							"width": 190.64794921875,
-							"height": 118,
+							"height": 133,
 							"nameCompartment": {
 								"$ref": "AAAAAAF2ADOGU7lqMcA="
 							},
@@ -3377,7 +3411,8 @@
 							"_parent": {
 								"$ref": "AAAAAAF2AB3/67Jiw0I="
 							},
-							"name": "idConvention"
+							"name": "idConvention",
+							"type": ""
 						},
 						{
 							"_type": "UMLAttribute",
@@ -3385,7 +3420,8 @@
 							"_parent": {
 								"$ref": "AAAAAAF2AB3/67Jiw0I="
 							},
-							"name": "nomConvention"
+							"name": "nomConvention",
+							"type": ""
 						},
 						{
 							"_type": "UMLAttribute",
@@ -3393,7 +3429,8 @@
 							"_parent": {
 								"$ref": "AAAAAAF2AB3/67Jiw0I="
 							},
-							"name": "categorieConvention"
+							"name": "categorieConvention",
+							"type": ""
 						},
 						{
 							"_type": "UMLAttribute",
@@ -3401,7 +3438,8 @@
 							"_parent": {
 								"$ref": "AAAAAAF2AB3/67Jiw0I="
 							},
-							"name": "idSalle"
+							"name": "idSalle",
+							"type": ""
 						}
 					]
 				},
@@ -3419,7 +3457,8 @@
 							"_parent": {
 								"$ref": "AAAAAAF2AB6E4rKMwIc="
 							},
-							"name": "idVisite"
+							"name": "idVisite",
+							"type": ""
 						},
 						{
 							"_type": "UMLAttribute",
@@ -3427,7 +3466,8 @@
 							"_parent": {
 								"$ref": "AAAAAAF2AB6E4rKMwIc="
 							},
-							"name": "DateVisite"
+							"name": "DateVisite",
+							"type": ""
 						},
 						{
 							"_type": "UMLAttribute",
@@ -3435,7 +3475,8 @@
 							"_parent": {
 								"$ref": "AAAAAAF2AB6E4rKMwIc="
 							},
-							"name": "idVisiteur"
+							"name": "idVisiteur",
+							"type": ""
 						},
 						{
 							"_type": "UMLAttribute",
@@ -3443,7 +3484,8 @@
 							"_parent": {
 								"$ref": "AAAAAAF2AB6E4rKMwIc="
 							},
-							"name": "idConvention"
+							"name": "idConvention",
+							"type": ""
 						}
 					]
 				},
@@ -3461,7 +3503,8 @@
 							"_parent": {
 								"$ref": "AAAAAAF2AB6LorK1EuM="
 							},
-							"name": "idVisiteur"
+							"name": "idVisiteur",
+							"type": ""
 						},
 						{
 							"_type": "UMLAttribute",
@@ -3469,7 +3512,8 @@
 							"_parent": {
 								"$ref": "AAAAAAF2AB6LorK1EuM="
 							},
-							"name": "nomVisiteur"
+							"name": "nomVisiteur",
+							"type": ""
 						},
 						{
 							"_type": "UMLAttribute",
@@ -3477,7 +3521,8 @@
 							"_parent": {
 								"$ref": "AAAAAAF2AB6LorK1EuM="
 							},
-							"name": "prenomVisiteur"
+							"name": "prenomVisiteur",
+							"type": ""
 						},
 						{
 							"_type": "UMLAttribute",
@@ -3485,7 +3530,8 @@
 							"_parent": {
 								"$ref": "AAAAAAF2AB6LorK1EuM="
 							},
-							"name": "adresseVisiteur"
+							"name": "adresseVisiteur",
+							"type": ""
 						},
 						{
 							"_type": "UMLAttribute",
@@ -3493,7 +3539,8 @@
 							"_parent": {
 								"$ref": "AAAAAAF2AB6LorK1EuM="
 							},
-							"name": "codePostalVisiteur"
+							"name": "codePostalVisiteur",
+							"type": ""
 						},
 						{
 							"_type": "UMLAttribute",
@@ -3501,7 +3548,8 @@
 							"_parent": {
 								"$ref": "AAAAAAF2AB6LorK1EuM="
 							},
-							"name": "villeVisiteur"
+							"name": "villeVisiteur",
+							"type": ""
 						}
 					]
 				},
@@ -3519,7 +3567,8 @@
 							"_parent": {
 								"$ref": "AAAAAAF2AB6Rc7LeKb4="
 							},
-							"name": "idSalle"
+							"name": "idSalle",
+							"type": ""
 						},
 						{
 							"_type": "UMLAttribute",
@@ -3527,7 +3576,8 @@
 							"_parent": {
 								"$ref": "AAAAAAF2AB6Rc7LeKb4="
 							},
-							"name": "nomSalle"
+							"name": "nomSalle",
+							"type": ""
 						},
 						{
 							"_type": "UMLAttribute",
@@ -3535,7 +3585,8 @@
 							"_parent": {
 								"$ref": "AAAAAAF2AB6Rc7LeKb4="
 							},
-							"name": "adresseSalle"
+							"name": "adresseSalle",
+							"type": ""
 						},
 						{
 							"_type": "UMLAttribute",
@@ -3543,7 +3594,8 @@
 							"_parent": {
 								"$ref": "AAAAAAF2AB6Rc7LeKb4="
 							},
-							"name": "villeSalle"
+							"name": "villeSalle",
+							"type": ""
 						}
 					]
 				},
@@ -3561,7 +3613,8 @@
 							"_parent": {
 								"$ref": "AAAAAAF2AB/p+7MOT6E="
 							},
-							"name": "idAnimateur"
+							"name": "idAnimateur",
+							"type": ""
 						},
 						{
 							"_type": "UMLAttribute",
@@ -3569,7 +3622,8 @@
 							"_parent": {
 								"$ref": "AAAAAAF2AB/p+7MOT6E="
 							},
-							"name": "nomAnimateur"
+							"name": "nomAnimateur",
+							"type": ""
 						},
 						{
 							"_type": "UMLAttribute",
@@ -3577,7 +3631,8 @@
 							"_parent": {
 								"$ref": "AAAAAAF2AB/p+7MOT6E="
 							},
-							"name": "prenomAnimateur"
+							"name": "prenomAnimateur",
+							"type": ""
 						},
 						{
 							"_type": "UMLAttribute",
@@ -3585,7 +3640,8 @@
 							"_parent": {
 								"$ref": "AAAAAAF2AB/p+7MOT6E="
 							},
-							"name": "titreAnimateur"
+							"name": "titreAnimateur",
+							"type": ""
 						},
 						{
 							"_type": "UMLAttribute",
@@ -3593,7 +3649,8 @@
 							"_parent": {
 								"$ref": "AAAAAAF2AB/p+7MOT6E="
 							},
-							"name": "dateDebut"
+							"name": "dateDebut",
+							"type": ""
 						},
 						{
 							"_type": "UMLAttribute",
@@ -3601,7 +3658,8 @@
 							"_parent": {
 								"$ref": "AAAAAAF2AB/p+7MOT6E="
 							},
-							"name": "dateFin"
+							"name": "dateFin",
+							"type": ""
 						},
 						{
 							"_type": "UMLAttribute",
@@ -3609,7 +3667,8 @@
 							"_parent": {
 								"$ref": "AAAAAAF2AB/p+7MOT6E="
 							},
-							"name": "idEmplacement"
+							"name": "idEmplacement",
+							"type": ""
 						}
 					]
 				},
@@ -3627,7 +3686,8 @@
 							"_parent": {
 								"$ref": "AAAAAAF2ACApA7M49Bw="
 							},
-							"name": "idEmplacement"
+							"name": "idEmplacement",
+							"type": ""
 						},
 						{
 							"_type": "UMLAttribute",
@@ -3635,7 +3695,8 @@
 							"_parent": {
 								"$ref": "AAAAAAF2ACApA7M49Bw="
 							},
-							"name": "numeroEmplacement"
+							"name": "numeroEmplacement",
+							"type": ""
 						},
 						{
 							"_type": "UMLAttribute",
@@ -3643,7 +3704,8 @@
 							"_parent": {
 								"$ref": "AAAAAAF2ACApA7M49Bw="
 							},
-							"name": "idSalle"
+							"name": "idSalle",
+							"type": ""
 						}
 					]
 				},
@@ -3979,6 +4041,14 @@
 								"$ref": "AAAAAAF2ADK+c7kYkRI="
 							},
 							"name": "getList"
+						},
+						{
+							"_type": "UMLOperation",
+							"_id": "AAAAAAF2A7UOIIW96tc=",
+							"_parent": {
+								"$ref": "AAAAAAF2ADK+c7kYkRI="
+							},
+							"name": "getByEmplacement"
 						}
 					]
 				},
@@ -4029,6 +4099,14 @@
 								"$ref": "AAAAAAF2ADOGU7lnFJ0="
 							},
 							"name": "getList"
+						},
+						{
+							"_type": "UMLOperation",
+							"_id": "AAAAAAF2A7TKMYW2R4U=",
+							"_parent": {
+								"$ref": "AAAAAAF2ADOGU7lnFJ0="
+							},
+							"name": "getByConvention"
 						}
 					]
 				}
