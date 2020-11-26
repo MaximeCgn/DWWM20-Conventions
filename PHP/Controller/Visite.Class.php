@@ -3,6 +3,8 @@ class Visite
 {
     private $_idVisite;
     private $_dateVisite;
+    private $_idVisiteur;
+    private $_idConvention;
 
     public function getIdVisite()
     {
@@ -20,6 +22,24 @@ class Visite
     public function setDateVisite($dateVisite)
     {
         return $this->_dateVisite = $dateVisite;
+    }
+
+    public function getIdVisiteur()
+    {
+        return $this->_idVisiteur;
+    }
+    public function setIdVisiteur($idVisiteur)
+    {
+        return $this->_idVisiteur = $idVisiteur;
+    }
+
+    public function getIdConvention()
+    {
+        return $this->_idConvention;
+    }
+    public function setidConvention($idConvention)
+    {
+        return $this->_idConvention = $idConvention;
     }
 
     public function __construct(array $options = [])

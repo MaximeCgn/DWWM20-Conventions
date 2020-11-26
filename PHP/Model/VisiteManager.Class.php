@@ -5,17 +5,21 @@ class VisiteManager
 	public static function add(Visite $obj)
 	{
  		$db=DbConnect::getDb();
-		$q=$db->prepare("INSERT INTO visite (dateVisite) VALUES (:dateVisite)");
-        $q->bindValue(":dateVisite", $obj->getDateVisite());
+		$q=$db->prepare("INSERT INTO visite (dateVisite,idVisiteur,idConvention) VALUES (:dateVisite,;idVisiteur,:idConvention)");
+		$q->bindValue(":dateVisite", $obj->getDateVisite());
+		$q->bindValue(":idVisiteur", $obj->getIdVisiteur());
+		$q->bindValue(":idConvention", $obj->getIdConvention());
 		$q->execute();
 	}
 
 	public static function update(Visite $obj)
 	{
  		$db=DbConnect::getDb();
-        $q=$db->prepare("UPDATE visite SET idVisite=:idVisite,dateVisite=:dateVisite WHERE idVisite=:idVisite");
+        $q=$db->prepare("UPDATE visite SET idVisite=:idVisite,dateVisite=:dateVisite,idVisteur=:idVisiteur,idConvention=:idConvention WHERE idVisite=:idVisite");
         $q->bindValue(":idVisite", $obj->getIdVisite());
 		$q->bindValue(":dateVisite", $obj->getDateVisite());
+		$q->bindValue(":idVisiteur", $obj->getIdVisiteur());
+		$q->bindValue(":idConvention", $obj->getIdVisite());
 		$q->execute();
 	}
 	public static function delete(Visite $obj)
