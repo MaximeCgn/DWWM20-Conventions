@@ -10,7 +10,7 @@ echo '<body class="colonne">
             <div class="ajouter"><a class="centre" href="index.php?page=formulaireEmplacements">Ajouter convention</a></div>
             <div class="espace"></div>
         </div>
-        <div class="liste">';
+        <div class="liste colonne">';
             foreach ($liste as $unEmplacement)
             {
             echo '<div class="emplacement margin">
