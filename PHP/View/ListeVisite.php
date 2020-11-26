@@ -20,7 +20,7 @@ echo '<body class="colonne">
             </div>';
         }
  
-    echo '</div>
+echo '</div>
 
 </body>
 
