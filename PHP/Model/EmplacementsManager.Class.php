@@ -22,6 +22,11 @@ class EmplacementsManager
 	}
 	public static function delete(Emplacements $obj)
 	{
+		$listeAnimateurs = AnimateursManager::getByEmplacement($obj->getIdEmplacement());
+		foreach ($listeAnimateurs as $unAnimateur)
+		{
+			AnimateursManager::delete($unAnimateur);
+		}
  		$db=DbConnect::getDb();
 		$db->exec("DELETE FROM emplacements WHERE idEmplacement=" .$obj->getIdEmplacement());
 	}
@@ -61,6 +66,22 @@ class EmplacementsManager
 		$conv=ConventionsManager::findById($idConvention);
 		 $db=DbConnect::getDb();
 		 $idConvention = (int) $idConvention;
+		$liste = [];
+		$q =$db->query("SELECT * FROM Emplacements where idSalle= ".$conv->getIdSalle());
+		while($donnees = $q->fetch(PDO::FETCH_ASSOC))
+		{
+			if($donnees != false)
+			{
+				$liste[] = new Emplacements($donnees);
+			}
+		}
+		return $liste;
+	}
+
+	public static function getBySalle($idSalle)
+	{
+		 $db=DbConnect::getDb();
+		 $idSalle = (int) $idSalle;
 		$liste = [];
 		$q =$db->query("SELECT * FROM Emplacements where idSalle= ".$conv->getIdSalle());
 		while($donnees = $q->fetch(PDO::FETCH_ASSOC))

@@ -22,8 +22,13 @@ class SallesManager {
         $q->execute();
     }
 
-    public static function delete(Salles $obj)
+    public static function delete(Salles $obj) // on delete en cascade 
     {
+        $listeEmplacements = EmplacementsManager::getBySalle($obj->getIdSalle());
+        foreach ($listeEmplacement as $unEmplacement)
+        {
+            EmplacementsManager::delete($unEmplacement);
+        }
         $database = DbConnect::getDb();
         $database->exec("DELETE FROM Salles WHERE idSalle=" . $obj->getIdSalle());
     }
