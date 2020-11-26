@@ -11,7 +11,7 @@ echo '<div class="contenu colonne">
 echo '<div class="liste colonne ">';
 foreach ($salle as $uneSalle){
     echo '
-    <div class="visiteur margin">
+    <div class="visiteur marginLight">
     <div class="libelle marginBouton">'. $uneSalle->getNomSalle().'</div>
     <div class="details marginBouton"><a href="index.php?page=formulaireSalles&typeFormulaire=details&id='.$uneSalle->getIdSalle().'">Détails</a></div>
     <div class="modifier marginBouton"><a href="index.php?page=formulaireSalles&typeFormulaire=modifier&id='.$uneSalle->getIdSalle().'">Modifier</a></div>
