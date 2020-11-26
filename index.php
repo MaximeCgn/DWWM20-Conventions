@@ -12,6 +12,9 @@ function ChargerClasse($classe)
 }
 spl_autoload_register("ChargerClasse");
 
+DbConnect::init();
+
+
 function afficherPage($page)
 {
     $chemin=$page[0];
@@ -24,6 +27,8 @@ function afficherPage($page)
     include $chemin.$nom.'.php';
     include 'PHP/VIEW/footer.php';
 }
+
+
 
 $routes=[
     "default"=>["PHP/VIEW/","listeConventions","Liste des conventions"],

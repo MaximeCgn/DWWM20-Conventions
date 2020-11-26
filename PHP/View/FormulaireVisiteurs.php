@@ -1,0 +1,3 @@
+<?php
+
+$typeForm= $_GET[""]

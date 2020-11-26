@@ -52,7 +52,7 @@ class VisiteursManager
     
 	public static function getList()
 	{
- 		$db=DbConnect::getDb();
+		$db=DbConnect::getDb();
 		$liste = [];
 		$q = $db->query("SELECT * FROM Visiteurs");
 		while($donnees = $q->fetch(PDO::FETCH_ASSOC))
@@ -62,6 +62,7 @@ class VisiteursManager
 				$liste[] = new Visiteurs($donnees);
 			}
 		}
+		
 		return $liste;
     }
     
