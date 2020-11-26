@@ -26,22 +26,22 @@ function afficherPage($page)
 }
 
 $routes=[
-    "default"=>["PHP/VIEW","listeConventions","Liste des conventions"],
-    "listeAnimateurs"=>["PHP/VIEW","listeAnimateurs","Liste des animateurs"],
-    "listeConventions"=>["PHP/VIEW","listeConventions","Liste des conventions"],
-    "listeEmplacements"=>["PHP/VIEW","listeEmplacements","Liste des emplacements"],
-    "listeSalles"=>["PHP/VIEW","listeSalles","Liste des salles"],
-    "listeVisite"=>["PHP/VIEW","listeVisite","Liste des visites"],
-    "listeVisiteurs"=>["PHP/VIEW","listeVisiteurs","Liste des visiteurs"],
-    "formulaireAnimateurs"=>["PHP/VIEW","formulaireAnimateurs","Formulaire des Animateurs"],
-    "formulaireConventions"=>["PHP/VIEW","formulaireConventions","Formulaire des Conventions"],
-    "formulaireEmplacements"=>["PHP/VIEW","formulaireEmplacements","Formulaire des Emplacements"],
-    "formulaireSalles"=>["PHP/VIEW","formulaireSalles","Formulaire des Salles"],
-    "formulaireVisite"=>["PHP/VIEW","formulaireVisite","Formulaire des Visites"],
-    "formulaireVisiteurs"=>["PHP/VIEW","formulaireVisiteurs","Formulaire des Visiteurs"],
-    "traitementAnimateurs"=>["PHP/VIEW","traitementAnimateurs","Traitement des Animateurs"],
-    "traitementConventions"=>["PHP/VIEW","traitementConventions","Traitement des Conventions"],
-    "traitementEmplacements"=>["PHP/VIEW","traitementEmplacements","Traitement des Emplacements"],
+    "default"=>["PHP/VIEW/","listeConventions","Liste des conventions"],
+    "listeAnimateurs"=>["PHP/VIEW/","listeAnimateurs","Liste des animateurs"],
+    "listeConventions"=>["PHP/VIEW/","listeConventions","Liste des conventions"],
+    "listeEmplacements"=>["PHP/VIEW/","listeEmplacements","Liste des emplacements"],
+    "listeSalles"=>["PHP/VIEW/","listeSalles","Liste des salles"],
+    "listeVisite"=>["PHP/VIEW/","listeVisite","Liste des visites"],
+    "listeVisiteurs"=>["PHP/VIEW/","listeVisiteurs","Liste des visiteurs"],
+    "formulaireAnimateurs"=>["PHP/VIEW/","formulaireAnimateurs","Formulaire des Animateurs"],
+    "formulaireConventions"=>["PHP/VIEW/","formulaireConventions","Formulaire des Conventions"],
+    "formulaireEmplacements"=>["PHP/VIEW/","formulaireEmplacements","Formulaire des Emplacements"],
+    "formulaireSalles"=>["PHP/VIEW/","formulaireSalles","Formulaire des Salles"],
+    "formulaireVisite"=>["PHP/VIEW/","formulaireVisite","Formulaire des Visites"],
+    "formulaireVisiteurs"=>["PHP/VIEW/","formulaireVisiteurs","Formulaire des Visiteurs"],
+    "traitementAnimateurs"=>["PHP/VIEW/","traitementAnimateurs","Traitement des Animateurs"],
+    "traitementConventions"=>["PHP/VIEW/","traitementConventions","Traitement des Conventions"],
+    "traitementEmplacements"=>["PHP/VIEW/","traitementEmplacements","Traitement des Emplacements"],
 ];
 
 if(isset($_GET["page"]))
