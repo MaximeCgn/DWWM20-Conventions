@@ -7,7 +7,7 @@ echo '<body class="colonne">
     <div class="contenu colonne">
         <div class="margin">
             <div class="espace"></div>
-            <div class="ajouter"><a class="centre" href="index.php?page=formulaireVisite">Ajouter Visite</a></div>
+            <div class="ajouter"><a class="centre" href="index.php?page=formulaireVisite&typeFormulaire=ajouter">Ajouter Visite</a></div>
             <div class="espace"></div>
         </div>';
         foreach ($visite as $uneVisite)

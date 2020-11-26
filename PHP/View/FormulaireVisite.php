@@ -1,14 +1,12 @@
 <?php
 
-echo '<body class="colonne">';
-
-$typeFormulaire = $_GET['typeFormulaire'];
+$typeFormulaire = $_GET["typeFormulaire"];
 
 if ( $typeFormulaire == 'ajouter' )
  {
-    echo '<form method="POST" action="index.php>?page=traitementVisite&typeTraitement=ajouter">
+    echo '<form method="POST" action="index.php>?page=TraitementVisite&typeTraitement=ajouter">
     $visite = new Visite(["dateVisite" => $_POST["dateVisite"], "idVisiteur" => $_POST["idVisiteur"], "idConvention" => $_POST["idConvention"])';
-    VisiteManager::add( $visite );
+    VisiteManager::add($visite);
 
     echo '<div class="contenu colonne">
     <div class="colonne">
@@ -61,7 +59,7 @@ elseif ( $typeFormulaire == 'modifier' )
     $listeVisiteur = VisiteursManager::getList();
     $listeConvention = ConventionsManager::getList();
 
-    echo '<form method="POST" action="index.php>?page=traitementVisite&typeTraitement=modifier">
+    echo '<form method="POST" action="index.php>?page=TraitementVisite&typeTraitement=modifier">
 
     <div class="contenu colonne">
     <div class="colonne">
@@ -123,7 +121,7 @@ elseif ( $typeFormulaire == 'details' )
     $id = VisiteManager::findById($idRecherche);
     $listeVisiteur = VisiteursManager::getList();
     $listeConvention = ConventionsManager::getList();
-    echo '<form method="POST" action="index.php>?page=traitementVisite&typeTraitement=details">
+    echo '<form method="POST" action="index.php>?page=TraitementVisite&typeTraitement=details">
 
     <div class="contenu colonne">
     <div class="colonne">
