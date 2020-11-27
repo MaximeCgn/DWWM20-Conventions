@@ -37,7 +37,7 @@ class Visite
     {
         return $this->_idConvention;
     }
-    public function setidConvention($idConvention)
+    public function setIdConvention($idConvention)
     {
         return $this->_idConvention = $idConvention;
     }
@@ -63,6 +63,6 @@ class Visite
     }
     public function toString()
     {
-        return $this->getDateVisite(); 
+        return $this->getDateVisite().' : '.$this->getIdVisiteur().' : '.$this->getIdConvention(); 
     }
 }

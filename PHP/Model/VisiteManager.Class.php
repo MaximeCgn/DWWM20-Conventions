@@ -19,7 +19,7 @@ class VisiteManager
         $q->bindValue(":idVisite", $obj->getIdVisite());
 		$q->bindValue(":dateVisite", $obj->getDateVisite());
 		$q->bindValue(":idVisiteur", $obj->getIdVisiteur());
-		$q->bindValue(":idConvention", $obj->getIdVisite());
+		$q->bindValue(":idConvention", $obj->getIdConvention());
 		$q->execute();
 	}
 	public static function delete(Visite $obj)
