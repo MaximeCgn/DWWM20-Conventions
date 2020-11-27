@@ -7,7 +7,7 @@ echo '<body class="colonne">
     <div class="contenui colonne">
         <div class="margin">
             <div class="espace"></div>
-            <div class="ajouter"><a class="centre" href="index.php?page=formulaireEmplacements&typeFormulaire=ajouter">Ajouter convention</a></div>
+            <div class="ajouter"><a class="centre" href="index.php?page=formulaireEmplacements&typeFormulaire=ajouter">Ajouter un emplacement</a></div>
             <div class="espace"></div>
         </div>
         <div class="liste colonne">';
