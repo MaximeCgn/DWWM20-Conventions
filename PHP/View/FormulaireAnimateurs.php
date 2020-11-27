@@ -84,14 +84,18 @@ else if($typeFormulaire=="modifier")
             </div>';
             echo'</div>
             <select class="libelle" name="idEmplacement">';
+            
+            $idRechercheEmplacement= $_GET['id'];
+            $idEmp=EmplacementsManager::findById($idRechercheEmplacement);
+            $listeEmplacement=EmplacementsManager::getList();
             foreach($listeEmplacement as $unEmplacement)
             {
                 $sel="";
-                if($unEmplacement->getIdEmplacement()== $id)
+                if($unEmplacement->getIdEmplacement()== $idEmp)
                 {
                     $sel= "selected";
                 }
-                echo'<option value="'.$unEmplacement->getIdEmplacement().'"'.$sel.'">';
+                echo'<option value="'.$unEmplacement->getIdEmplacement().'"'.$sel.'">'.$unEmplacement->getIdEmplacement().'';
             }
             echo'</select>
             </div>';
@@ -136,15 +140,19 @@ else if($typeFormulaire=="modifier")
                     </div>';
                     echo'</div>
                     <select class="libelle" name="idEmplacement">';
-                    $listeEmplacement=EmplacementsManager::getList();
-                    foreach($listeEmplacement as $unEmplacement)
+                    $idRechercheEmplacement= $_GET['id'];
+                    $idEmp = EmplacementsManager::findById($idRechercheEmplacement);
+                    $listeEmplacement= EmplacementsManager::getList();
+                    foreach($listeEmplacement as $unEmplacement) 
                     {
                         $sel="";
-                        if($unEmplacement->getIdEmplacement()== $idEmp)
+                        if($unEmplacement->getIdEmplacement()==$idEmp)
                         {
-                            $sel= "selected";
+                            $sel="selected";
                         }
-                        echo'<option value="'.$unEmplacement->getIdEmplacement().'"'.$sel.'">';
+                        
+                    echo'<input class="libelle" type="text" name="idEmplacement" value="'.$unEmplacement->getIdEmplacement($idEmp).'"'.$sel.' disabled/>
+                         </div>';
                     }
                     echo'</select>
                     </div>';
