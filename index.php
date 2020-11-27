@@ -49,7 +49,11 @@ $routes=[
     "traitementEmplacements"=>["PHP/VIEW/","traitementEmplacements","Traitement des Emplacements"],
     "traitementSalles"=>["PHP/VIEW/","traitementSalles","Traitement des Salles"],
     "traitementVisite"=>["PHP/VIEW/","traitementVisite","Traitement des Visites"],
-    "traitementVisiteurs"=>["PHP/VIEW/","traitementVisiteurs","Traitement des Visiteurs"]
+    "traitementVisiteurs"=>["PHP/VIEW/","traitementVisiteurs","Traitement des Visiteurs"],
+    "formulaireUtilisateurs"=>["PHP/VIEW/","formulaireUtilisateurs","Formulaire des Utilisateurs"],
+    "traitementUtilisateurs"=>["PHP/VIEW/", "traitementUtilisateurs","Traitement des utilisateurs"],
+    "traitementConnexion"=>["PHP/VIEW/", "traitementConnexion","Traitement des connexions"],
+    "formulaireConnexions"=>["PHP/VIEW/","formulaireConnexions","Formulaire des connexions"]
 ];
 
 if(isset($_GET["page"]))

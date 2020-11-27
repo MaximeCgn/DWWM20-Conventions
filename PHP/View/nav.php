@@ -17,4 +17,8 @@
         <div>
             <div class="libelle"><a class="centre" href="index.php?page=listeVisiteurs">Visiteurs</a></div>
         </div>
+        <div>
+            <div class="libelle"><a class="centre" href="index.php?page=formulaireUtilisateurs">Inscription</a></div>
+            <div class="libelle"><a class="centre" href="index.php?page=formulaireConnexions">Connexion</a></div>
+        </div>
     </nav>
